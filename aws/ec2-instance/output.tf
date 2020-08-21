@@ -4,7 +4,7 @@ output "region" {
 }
 
 output "ami" {
-  value = data.aws_ami.ami.id
+  value = data.aws_ami.centos.id
 }
 
 output "vpc" {
@@ -12,5 +12,5 @@ output "vpc" {
 }
 
 output "subnets" {
-  value = data.aws_subnet_ids.all.*
+  value = data.aws_subnet_ids.all.ids
 }
